@@ -1,0 +1,16 @@
+@CHARSET "ISO-8859-1";
+table {
+  margin: 40px 0;
+  margin-top: auto;
+  table-layout: fixed;
+  width: 400px;
+}
+
+.wider td {
+  width: 10%;
+}
+
+th, td {
+  padding: 10px;
+  text-align: left;
+}

@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC
+        "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+        "http://tilles.apache.org/dtds/tiles-config_2_0.dtd">
+<tiles-definitions>
+	<definition name="baseTemplate" id="baseTemplate"
+		template="/WEB-INF/layout/baseLayout.jsp">
+		<!-- <put-attribute name="title" value="${title}" /> -->
+		<put-attribute name="title" value="prestigepoint" />
+		<put-attribute name="header" value="/WEB-INF/layout/header.jsp" />
+		<put-attribute name="body" value="${body}" />
+		<put-attribute name="footer" value="/WEB-INF/layout/footer.jsp" />
+	</definition>
+	<!-- Mapping for Login Page -->
+	<definition name="login" template="/WEB-INF/jsp/login.jsp"></definition>
+
+	<definition name="signup" id="signup" extends="baseTemplate">
+		<put-attribute name="body" value="/WEB-INF/jsp/signup.jsp" />
+		<put-attribute name="title" type="string" value="Add User" />
+	</definition>
+
+	<definition name="welcome" id="welcome" extends="baseTemplate">
+		<put-attribute name="body" value="/WEB-INF/jsp/welcome.jsp" />
+		<put-attribute name="title" type="string" value="Welcome Page" />
+	</definition>
+
+	<!-- for displaying Enqury by month page -->
+	<!-- sandeep jariya -->
+
+	<definition name="viewEnquiryByMonth" id="viewEnquiryByMonth"
+		extends="baseTemplate">
+		<put-attribute name="body"
+			value="/WEB-INF/jsp/viewEnquiryByMonth.jsp" />
+		<put-attribute name="title" type="string" value="EnquiryByMonth Page" />
+	</definition>
+
+	<definition name="course" id="course" extends="baseTemplate">
+		<put-attribute name="body" value="/WEB-INF/jsp/addCourse.jsp" />
+		<put-attribute name="title" type="string" value="course Page" />
+	</definition>
+
+	<definition name="currentBatch" id="currentBatch" extends="baseTemplate">
+		<put-attribute name="body" value="/WEB-INF/jsp/currentBatch.jsp" />
+		<put-attribute name="title" type="string" value="currentBatch Page" />
+	</definition>
+
+	<definition name="batch" id="batch" extends="baseTemplate">
+		<put-attribute name="body" value="/WEB-INF/jsp/addBatch.jsp" />
+		<put-attribute name="title" type="string" value="batch Page" />
+	</definition>
+	<!-- rahul work -->
+	<definition name="addAdminEnquiry" id="addAdminEnquiry" extends="baseTemplate">
+		<put-attribute name="body" value="/WEB-INF/jsp/addAdminEnquiry.jsp" />
+		<put-attribute name="title" type="string" value="add Enquiry Page" />
+	</definition>
+
+	<definition name="getFooterPhotoPage" id="getFooterPhotoPage"
+		extends="baseTemplate">
+		<put-attribute name="body" value="/WEB-INF/jsp/addPhotoInFooter.jsp" />
+		<put-attribute name="title" type="string" value="getFooterPhotoPage Page" />
+	</definition>
+	
+
+	<definition name="scroller" id="scroller" extends="baseTemplate">
+		<put-attribute name="body" value="/WEB-INF/jsp/scroller.jsp" />
+		<put-attribute name="title" type="string" value="scroller Page" />
+	</definition>
+
+	<definition name="registration" id="registration" extends="baseTemplate">
+		<put-attribute name="body" value="/WEB-INF/jsp/registration.jsp" />
+		<put-attribute name="title" type="string" value="registration Page" />
+	</definition>
+
+	<definition name="viewStudentDetails" id="viewStudentDetails"
+		extends="baseTemplate">
+		<put-attribute name="body"
+			value="/WEB-INF/jsp/viewStudentDetails.jsp" />
+		<put-attribute name="title" type="string"
+			value="viewStudentDetails Page" />
+	</definition>
+	
+	
+
+	<definition name="getEnquiry" id="getEnquiry"
+		extends="baseTemplate">
+		<put-attribute name="body"
+			value="/WEB-INF/jsp/viewEnquiryDetails.jsp" />
+		<put-attribute name="title" type="string"
+			value="getEnquiry Page" />
+	</definition>
+
+	<definition name="emi" id="emi" extends="baseTemplate">
+		<put-attribute name="body" value="/WEB-INF/jsp/emi.jsp" />
+		<put-attribute name="title" type="string"
+			value="viewEnquiryDetails Page" />
+	</definition>
+
+	<definition name="sendMail" id="sendMail" extends="baseTemplate">
+		<put-attribute name="body" value="/WEB-INF/jsp/sendMail.jsp" />
+		<put-attribute name="title" type="string" value="Mail Page" />
+	</definition>
+
+	<definition name="showList" id="showList" extends="baseTemplate">
+		<put-attribute name="body" value="/WEB-INF/jsp/showList.jsp" />
+		<put-attribute name="title" type="string" value="showList Page" />
+	</definition>
+
+	<definition name="mailSuccess" id="mailSuccess" extends="baseTemplate">
+		<put-attribute name="body" value="/WEB-INF/jsp/mailSuccess.jsp" />
+		<put-attribute name="title" type="string" value="Success Page" />
+	</definition>
+
+	<definition name="upload" id="upload" extends="baseTemplate">
+		<put-attribute name="body" value="/WEB-INF/jsp/upload.jsp" />
+		<put-attribute name="title" type="string" value="Upload Jar" />
+	</definition>
+
+	<definition name="questionAndAnswer" id="questionAndAnswer"
+		extends="baseTemplate">
+		<put-attribute name="body" value="/WEB-INF/jsp/questionAndAnswer.jsp" />
+		<put-attribute name="title" type="string" value="Question Answer page" />
+	</definition>
+
+	<definition name="differenceQuestion" id="differenceQuestion"
+		extends="baseTemplate">
+		<put-attribute name="body"
+			value="/WEB-INF/jsp/differenceQuestion.jsp" />
+		<put-attribute name="title" type="string" value="Question Answer page" />
+	</definition>
+	<definition name="addPlacedStudent" id="addPlacedStudent"
+		extends="baseTemplate">
+		<put-attribute name="body" value="/WEB-INF/jsp/addPlacedStudent.jsp" />
+		<put-attribute name="title" type="string" value="addPlacedStudent page" />
+	</definition>
+	<definition name="viewPlacedStudent" id="viewPlacedStudent"
+		extends="baseTemplate">
+		<put-attribute name="body" value="/WEB-INF/jsp/viewPlacedStudent.jsp" />
+		<put-attribute name="title" type="string"
+			value="viewPlacedStudent page" />
+	</definition>
+	
+	
+	<definition name="viewPlacedStudentDetail" id="viewPlacedStudentDetail"
+		extends="baseTemplate">
+		<put-attribute name="body" value="/WEB-INF/jsp/viewPlacedStudentDetail.jsp" />
+		<put-attribute name="title" type="string"
+			value="viewPlacedStudentDetail page" />
+	</definition>
+	
+	
+	<definition name="challenge" id="challenge" extends="baseTemplate">
+		<put-attribute name="body" value="/WEB-INF/jsp/addChallenge.jsp" />
+		<put-attribute name="title" type="string" value="challenge page" />
+	</definition>
+	<definition name="viewChallenge" id="viewChallenge" extends="baseTemplate">
+		<put-attribute name="body" value="/WEB-INF/jsp/viewChallenge.jsp" />
+		<put-attribute name="title" type="string" value="viewChallenge page" />
+	</definition>
+	<definition name="forgotPassword" id="forgotPassword" extends="baseTemplate">
+		<put-attribute name="body" value="/WEB-INF/jsp/forgotPassword.jsp" />
+		<put-attribute name="title" type="string" value="forgotPassword page" />
+	</definition>
+	<definition name="error" id="error" extends="baseTemplate">
+		<put-attribute name="body" value="/WEB-INF/jsp/error.jsp" />
+	</definition>
+	
+	<definition name="addMarquee" id="addMarquee" extends="baseTemplate">
+		<put-attribute name="body" value="/WEB-INF/jsp/addMarquee.jsp" />
+		<put-attribute name="title" type="string" value="addMarquee Page" />
+	</definition>
+	
+	<definition name="uploadImages" id="uploadImages" extends="baseTemplate">
+		<put-attribute name="body" value="/WEB-INF/jsp/uploadImages.jsp" />
+		<put-attribute name="title" type="string" value="uploadImages Page" />
+	</definition>
+	
+	<definition name="assignmentView" id="assignmentView" extends="baseTemplate">
+		<put-attribute name="body" value="/WEB-INF/jsp/addAssignment.jsp" />
+		<put-attribute name="title" type="string" value="assignmentView Page" />
+	</definition>
+	
+	<definition name="uploadPlacedStudentImages" id="uploadPlacedStudentImages" extends="baseTemplate">
+		<put-attribute name="body" value="/WEB-INF/jsp/placedstudentimages.jsp" />
+		<put-attribute name="title" type="string" value="uploadPlacedStudentImages Page" />
+	</definition>
+	
+	<!-- <definition name="persuingStudent" id="persuingStudent" extends="baseTemplate">
+		<put-attribute name="body" value="/WEB-INF/jsp/persuingStudent.jsp" />
+		<put-attribute name="title" type="string" value="persuingStudent Page" />
+	</definition> -->
+	
+	<definition name="persuingStudentDetail" id="persuingStudentDetail" extends="baseTemplate">
+		<put-attribute name="body" value="/WEB-INF/jsp/persuingStudentDetail.jsp" />
+		<put-attribute name="title" type="string" value="persuingStudent Page" />
+	</definition>
+	
+	<definition name="placedStudentEmi" id="placedStudentEmi" extends="baseTemplate">
+		<put-attribute name="body" value="/WEB-INF/jsp/placedStudentEmi.jsp" />
+		<put-attribute name="title" type="string" value="placed Student EMI" />
+	</definition>
+	
+	<definition name="addCourseCatagory" id="addCourseCatagory" extends="baseTemplate">
+		<put-attribute name="body" value="/WEB-INF/jsp/addCourseCatagory.jsp" />
+		<put-attribute name="title" type="string" value="Add Course Catagory" />
+	</definition>
+	
+	
+</tiles-definitions>

@@ -1,0 +1,35 @@
+#upload_form {
+    float:left;
+    padding:20px;
+    width:700px;
+}
+#preview {
+    background-color:#fff;
+    display:block;
+    /* float:right; */
+    width:93px;
+}
+#upload_form > div {
+    margin-bottom:10px;
+}
+#speed,#remaining {
+    float:left;
+    width:100px;
+}
+#b_transfered {
+    float:right;
+    text-align:right;
+}
+.clear_both {
+    clear:both;
+}
+#image_file {
+    width:400px;
+}
+#fileinfo,#error,#error2,#abort,#warnsize {
+    color:#aaa;
+    display:none;
+    font-size:10pt;
+    font-style:italic;
+    margin-top:10px;
+}

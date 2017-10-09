@@ -1,0 +1,19 @@
+nav {
+	text-align: right;
+	width: 60%;
+}
+nav > ul { float: right; }
+nav > ul > li { float: left; }
+nav > ul > li >a { line-height: 35px; }
+.inputControl { width: 94%; }
+.formEnquiry { width: 295px; }
+.contact-info li { float: left; }
+.testimonial { width: 483px; }
+.testimonial-txt { width: 326px; }
+.bx-wrapper .bx-pager .bx-pager-item, .bx-wrapper .bx-controls-auto .bx-controls-auto-item { float: left; }
+.bx-wrapper .bx-pager.bx-default-pager a {
+	text-indent: 0;
+	font-size: 0;
+}
+.bx-wrapper .bx-pager { padding-left: 50%; }
+textarea{overflow:auto;}
